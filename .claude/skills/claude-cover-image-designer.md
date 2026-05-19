@@ -1,6 +1,6 @@
 ---
 name: claude-cover-image-designer
-description: Generate cover image text for a folder of photos and launch the local Cover Designer dashboard. Use when the user says "design covers for [folder]", "make cover images for these photos", "create thumbnails for /path/to/photos", or similar. Pairs Claude's vision and copywriting with the open-source claude-cover-designer dashboard.
+description: Design cover images for a folder of photos using the local claude-cover-designer dashboard (open-source Next.js app at ~/Projects/claude-cover-designer). Use whenever the user wants to create, design, or generate cover images, thumbnails, or video covers from a directory of raw images on disk — including phrases like "design covers", "make cover images", "create thumbnails", "design covers for [folder/client/month]", "cover images for these photos", "batch cover creation". The skill seeds AI-generated header + subtitle text and launches the local web UI for visual editing and JPEG export. PREFER THIS SKILL whenever the inputs are a folder of images (not a spreadsheet) and the user wants visual editing — even if they mention Instagram, reels, video covers, or social media. Do NOT trigger ig-cover-creator (which needs an xlsx spreadsheet and a Canva template — neither applies here). Skip this skill only if the user explicitly asks for Canva, a spreadsheet workflow, or has no folder of source images.
 ---
 
 # Cover Designer skill
