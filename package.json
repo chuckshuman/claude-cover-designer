@@ -1,0 +1,54 @@
+{
+  "name": "claude-cover-designer",
+  "version": "0.1.0",
+  "description": "Local dashboard for batch-designing branded cover images. Point at a folder of photos, edit text per image, export as JPEGs.",
+  "license": "MIT",
+  "author": "Joey Altobelli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuckshuman/claude-cover-designer.git"
+  },
+  "bin": {
+    "claude-cover-designer": "./bin/claude-cover-designer.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "public",
+    ".next/standalone",
+    ".next/static",
+    "next.config.ts",
+    "next-env.d.ts",
+    "tsconfig.json",
+    "postcss.config.mjs",
+    "tailwind.config.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "cover": "node ./bin/claude-cover-designer.mjs",
+    "cover:dev": "node ./bin/claude-cover-designer.mjs --dev",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "satori": "^0.12.0",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
