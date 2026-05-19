@@ -1,5 +1,5 @@
 ---
-name: cover-designer
+name: claude-cover-image-designer
 description: Generate cover image text for a folder of photos and launch the local Cover Designer dashboard. Use when the user says "design covers for [folder]", "make cover images for these photos", "create thumbnails for /path/to/photos", or similar. Pairs Claude's vision and copywriting with the open-source claude-cover-designer dashboard.
 ---
 
